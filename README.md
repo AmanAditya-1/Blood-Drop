@@ -7,12 +7,7 @@ BloodDonor promotes voluntary blood donations.
 
 ### Frontend
 - React
-- Axios
 - Material UI
 
 ### Backend
-- Spring Boot
-- Spring Security
-- Spring Data JPA
-- PostgreSQL
-- Twilio Api
+- Firebase
