@@ -6,6 +6,10 @@ import CardContent from '@mui/material/CardContent';
 import './About.css';
 import Typography from '@mui/material/Typography';
 import CardMedia from '@mui/material/CardMedia';
+import nil from '../images/nil.jpg';
+import aman from '../images/aman.jpeg';
+import siddhant from '../images/siddhant.jpeg';
+
 
 
 export default function About() {
@@ -113,11 +117,9 @@ export default function About() {
             <span className='aboutTag' style={{letterSpacing:"2px"}}>OUR TEAM</span>
             <div className="cardholder">
               <div className="member">
-                <div className="image" style={{background:`linear-gradient(180deg, rgba(0, 0, 0, 0.041), rgba(23, 85, 177, 0.233), rgba(241, 85, 228, 0.342)), url(${https://drive.google.com/file/d/1ycv5oD9OG3Oa68wnTZTWpwI9rfBz2jdp/view?usp=share_link})`}}>
-                    {/* <h3>Developer</h3> */}
-                </div>
+                <img className="image" src={nil}/>
                 <section className="member-details">
-                    <span>Neeraj Panmand</span>
+                    <span>Nil Mani</span>
                     <p>Software Developer</p>
                     <section id="link">
                         <a href="https://in.linkedin.com/in/neeraj-panmand" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Code-4ge" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
@@ -126,11 +128,9 @@ export default function About() {
               </div>
 
               <div className="member">
-                <div className="image" style={{background:`linear-gradient(180deg, rgba(0, 0, 0, 0.041), rgba(23, 85, 177, 0.233), rgba(241, 85, 228, 0.342)), url(${process.env.PUBLIC_URL + '/assets/team/tushar.jpeg'})`}}>
-                    {/* <h3>Developer</h3> */}
-                </div>
+                <img className="image" src={aman}/>
                 <section className="member-details">
-                    <span>Tushar Sangle</span>
+                    <span>Aman Aditya</span>
                     <p>Software Developer</p>
                     <section id="link">
                         <a href="https://www.linkedin.com/in/tushar-sangle" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/TusharSangle" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
@@ -139,11 +139,9 @@ export default function About() {
               </div>
 
               <div className="member">
-                <div className="image" style={{background:`linear-gradient(180deg, rgba(0, 0, 0, 0.041), rgba(23, 85, 177, 0.233), rgba(241, 85, 228, 0.342)), url(${process.env.PUBLIC_URL + '/assets/team/taha.jpg'})`}}>
-                    {/* <h3>Developer</h3> */}
-                </div>
+               <img className="image" src={siddhant}/>
                 <section className="member-details">
-                    <span>Gulam Taha Yaseen</span>
+                    <span>Siddhant Keshari</span>
                     <p>Software Developer</p>
                     <section id="link">
                         <a href="https://www.linkedin.com/in/taha-yasin/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/taha-yasin" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
