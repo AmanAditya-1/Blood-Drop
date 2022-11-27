@@ -4,8 +4,6 @@ import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
 import CardContent from '@mui/material/CardContent';
 import './About.css';
-import Typography from '@mui/material/Typography';
-import CardMedia from '@mui/material/CardMedia';
 import nil from '../images/nil.jpg';
 import aman from '../images/aman.jpeg';
 import siddhant from '../images/siddhant.jpeg';
