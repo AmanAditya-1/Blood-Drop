@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import CircularProgress from '@mui/material/CircularProgress';
 import TextField from "@mui/material/TextField";
 import Box from '@mui/material/Box';
-import userService from '../../Service/UserService';
-import AuthenticationService from '../../Service/AuthenticationService';
 import Button from '@mui/material/Button';    
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
@@ -165,22 +163,7 @@ export default function SearchBlood() {
 		e.preventDefault();
         setseachSpinner(true);
 		setPagination({...pagination, Loading: true});
-		userService.findDonor(searchFor, 0)
-		.then(response => {
-			setseachSpinner(false);
-			setFoundDonors(response.data.donors);
-			setPagination({
-				...pagination,
-				totalPages: response.data.numberOfPages,
-				totalRows: response.data.numberOfElements,
-				Loading: false
-			});
-		})
-		.catch(error => {
-			setseachSpinner(false);
-			setPagination({...pagination, Loading: false});
-			console.log("error => " + error);
-		})
+		
 	}
 
 
@@ -190,32 +173,7 @@ export default function SearchBlood() {
 			setRequestSpinner(true);
 			console.log('request clicked');
 			console.log(selectedRows);
-			userService.setRequestDonor(selectedRows);
-			if(AuthenticationService.isUserLoggedIn())
-			{
-				setRequestSpinner(false);
-				window.location.replace('/send-Request');
-			}
-			else{
-				Swal.fire({
-					confirmButtonText: 'Login',
-					showDenyButton: true,
-					denyButtonText: `Register As User`,
-					backdrop: `rgba(0,0,0,0.4)`,
-					allowOutsideClick: false,
-					allowEscapeKey: false,
-					focusConfirm: true,
-				}).then((result) => {
-					setRequestSpinner(true);
-					if (result.isConfirmed) {
-						window.location.replace('/signin');
-					}
-					else if (result.isDenied) {    
-						window.location.replace('/user/signup');
-					}
-				});
-				setRequestSpinner(true);
-			}
+			
 		}
 		else{
 			console.error("To request select donor first");
@@ -229,18 +187,7 @@ export default function SearchBlood() {
 			prevSelectedRows.current = selectedRows;
 			setPagination({...pagination, Loading: true});
 			setFoundDonors([]);
-			userService.findDonor(searchFor, pagination.page)
-			.then(response => {
-				setFoundDonors(response.data.donors);
-				setPagination({...pagination, Loading: false});
-				setTimeout(() => {
-					setSelectedRows(prevSelectedRows.current);
-				});
-			})
-			.catch(error => {
-				setPagination({...pagination, Loading: false});
-				console.log("page error =>" + error);
-			});
+			
 		}
 	}, [pagination.page])
 

@@ -85,26 +85,3 @@ function Signup() {
 }
 
 export default Signup;
-
-// import React from 'react';
-// // import PageCover from '../../assets/images/pageCover.jpg';
-// // import Donation from '../../assets/images/donation.jpg';
-
-// const Intro = () => (
-//   <div className="bg-[#dcdcdc] h-screen">
-//     <div className="mainPage flex flex-row justify-center items-center gap-[500px] h-screen">
-//       <div className="bottomPage">
-//         <p className="text-6xl">Welcome XYZ</p>
-//         <p className="text w-96 text-left mb-4 text-6xl font-extrabold text-[#ce171b]">
-//           GIVE BLOOD SAVE A LIFE
-//         </p>
-//         <p className="para w-96 font-semibold text-left text-lg">There are no substitutes for blood, platelets or plasma, they cannot be manufactured. Patients in need of blood or blood products must rely on donations from people like you. Those who are hesitant about donating blood for the first time often find that the donation process is easy and that saving lives is deeply gratifying.</p>
-//       </div>
-//       {/* <div className="image">
-//         <img src={Donation} className="imageLogo" alt="Logo" />
-//       </div> */}
-//     </div>
-//   </div>
-// );
-
-// export default Intro;

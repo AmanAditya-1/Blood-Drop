@@ -14,7 +14,7 @@ export default function Footer() {
             </div>
             <hr />
             <div className='footersec' id='downfooter'>
-                <p>© BLOOD-DONOR 2021. We love our users!</p>
+                <p>© BLOOD-DONOR 2022. We love our users!</p>
                 <section>
                     <a href="#">Privacy & Policies</a>
                     <a href="#">Terms & Conditions</a>

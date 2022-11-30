@@ -4,8 +4,6 @@ import SearchBlood from "./Component/RequestBlood/SearchBlood";
 import { Header, Info } from "./Component/HomePage";
 import DonorForm from "./Component/SignIn_Up/DonorForm";
 import ReqForm from "./Component/SignIn_Up/ReqForm";
-import Loading from "./Component/Loading";
-import VerifyAccount from "./Component/VerifyAccount";
 import About from "./Component/About";
 import Footer from "./Component/Footer";
 import "./App.css";
@@ -41,15 +39,9 @@ function App() {
             }
           >
           </Route>
-          <Route path="/loading" exact element={<Loading/>} />
           <Route path="/donor/form" exact element={<DonorForm/>} />
           <Route path="/request/form" exact element={<ReqForm/>} />
           <Route path="/search-for-blood" exact element={<SearchBlood/>} />
-          <Route
-            path="/registration/verification/:token"
-            exact
-            element={VerifyAccount}
-          />
           <Route path="/about" exact element={<About/>} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />

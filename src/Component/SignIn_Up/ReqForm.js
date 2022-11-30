@@ -1,5 +1,4 @@
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
-import AbcTwoToneIcon from '@mui/icons-material/AbcTwoTone';
 import Avatar from "@mui/material/Avatar";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -12,17 +11,14 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import Grid from "@mui/material/Grid";
 import HowToRegTwoToneIcon from '@mui/icons-material/HowToRegTwoTone';
-import InputAdornment from '@mui/material/InputAdornment';
 import InputLabel from '@mui/material/InputLabel';
 import { IMaskInput } from "react-imask";
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import Link from "@mui/material/Link";
 import MuiAlert from '@mui/material/Alert';
 import MenuItem from '@mui/material/MenuItem';
-import PasswordTwoToneIcon from '@mui/icons-material/PasswordTwoTone';
 import PropTypes from "prop-types";
 import React from "react";
-import RegistrationService from "../../Service/RegistrationService";
 import Select from '@mui/material/Select';
 import { Snackbar } from "@mui/material";
 import Swal from "sweetalert2";
@@ -124,33 +120,6 @@ export default function SignUp() {
                 }
             }
 
-            RegistrationService.registerDonor(user_details).then((response)=>{
-                console.log(response)
-                setSpinner(false);
-                Swal.fire({
-                    imageUrl:`${process.env.PUBLIC_URL}/assets/email.png`,
-                    imageHeight: '200',
-                    imageWidth: '250',
-                    title: "You're almost there!",
-                    html: "<i>"+Detail.username+"</i> <br> Head over to your inbox to confirm your email and finish your account creation!",
-                    confirmButtonText: 'Go To Login',
-                    allowOutsideClick: false,
-                    allowEscapeKey: false,
-                    focusConfirm: true,
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location.replace('/signin');
-                    }
-                });
-            }).catch((error) =>{
-                setSpinner(false);
-                setAlert(true);
-                console.log(error);
-                if(error.response && error.response.data && error.response.data.message)
-                    setErrorMsg("error.response.data.message");
-                else
-                    setErrorMsg("Failed to Register, Try after some time...");
-            });
         }
     };
 

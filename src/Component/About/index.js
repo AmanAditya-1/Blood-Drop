@@ -107,7 +107,6 @@ export default function About() {
           <br />
           <br />
           <br />
-          {/* <hr /> */}
           <br />
           <br />
           <br />
@@ -120,7 +119,7 @@ export default function About() {
                     <span>Nil Mani</span>
                     <p>Software Developer</p>
                     <section id="link">
-                        <a href="https://in.linkedin.com/in/neeraj-panmand" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Code-4ge" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nil-mani-7723a0157/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/nilmani9430" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                     </section>
                 </section>
               </div>
@@ -131,7 +130,7 @@ export default function About() {
                     <span>Aman Aditya</span>
                     <p>Software Developer</p>
                     <section id="link">
-                        <a href="https://www.linkedin.com/in/tushar-sangle" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/TusharSangle" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aman-aditya-a30a4922a/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/AmanAditya-1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                     </section>
                 </section>
               </div>
@@ -142,7 +141,7 @@ export default function About() {
                     <span>Siddhant Keshari</span>
                     <p>Software Developer</p>
                     <section id="link">
-                        <a href="https://www.linkedin.com/in/taha-yasin/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/taha-yasin" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/siddhant-keshari/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/Siddhant422" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                     </section>
                 </section>
               </div>
